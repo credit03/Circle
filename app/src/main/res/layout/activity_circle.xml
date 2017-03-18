@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_circle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.guoyi.circle.activity.CircleActivity">
+
+    <include layout="@layout/layout_toobar" />
+
+    <include layout="@layout/layout_load_progress" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+            android:id="@+id/swipeToLoadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#39AEC2"
+            android:visibility="gone"
+            app:default_to_refreshing_scrolling_duration="500"
+            app:refresh_complete_delay_duration="0"
+            app:refresh_complete_to_default_scrolling_duration="800"
+            app:refresh_final_drag_offset="@dimen/refresh_header_height_yalantis"
+            app:release_to_refreshing_scrolling_duration="0"
+            app:swipe_style="blew">
+
+            <include
+                android:id="@id/swipe_refresh_header"
+                layout="@layout/layout_yalantis_header" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/swipe_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <include
+                android:id="@id/swipe_load_more_footer"
+                layout="@layout/layout_google_footer" />
+        </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/layout_editview" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

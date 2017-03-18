@@ -1,0 +1,55 @@
+<resources>
+
+
+    <style name="AppToolbarPopupTheme" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:dropDownListViewStyle">@style/AppDropDownListViewStyle</item>
+    </style>
+
+    <style name="AppDropDownListViewStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@drawable/line_divider</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_232323</item>
+        <item name="colorPrimaryDark">@color/color_232323</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_232323</item>
+        <item name="colorPrimaryDark">@color/color_232323</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="loading_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="comment_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!-- 显示对话框时当前的屏幕是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="social_pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+</resources>

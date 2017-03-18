@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="__picker_actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
+        <item name="actionBarSize">@dimen/__picker_iwf_actionBarSize</item>
+    </style>
+
+    <style name="__picker_customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarTheme">@style/__picker_actionBarTheme</item>
+        <item name="colorPrimary">#232323</item>
+        <item name="actionBarSize">@dimen/__picker_iwf_actionBarSize</item>
+        <item name="colorPrimaryDark">#232323</item>
+    </style>
+
+    <style name="__picker_btn" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+</resources>

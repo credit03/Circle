@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_load_pro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100px"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <ProgressBar
+        android:id="@+id/load_pro"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_margin="50px"
+        android:indeterminateDrawable="@drawable/webviewprogress" />
+
+    <TextView
+        android:id="@+id/tv_load_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="加载中，请稍等..."
+        android:textColor="@color/balck" />
+
+
+    <LinearLayout
+        android:id="@+id/reload_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="120px"
+        android:background="@drawable/bg_red_react"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10px"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:src="@drawable/ic_menu_refresh"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="网络出错啦！！！"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
